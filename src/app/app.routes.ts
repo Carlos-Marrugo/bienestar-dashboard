@@ -3,6 +3,20 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: '',
-        loadChildren: () => import('./pages/dashboard/dashboard.module').then(m => m.DashboardModule)
+        loadComponent: () => import('./shared/components/layout/layout.component'),
+        children: [
+            {
+                path: 'dashboard',
+                loadComponent: () => import('./business/dashboard/dashboard.component').then(m => m.DashboardComponent),
+            },
+            {
+                path: 'profile',
+                loadComponent: () => import('./business/profile/profile.component').then(m => m.ProfileComponent)
+            },
+            {
+                path: 'tables',
+                loadComponent: () => import('./business/tables/tables.component').then(m => m.TablesComponent)
+            }
+        ]
     }
 ];

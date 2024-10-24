@@ -12,5 +12,5 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
   styleUrls: ['./layout.component.css']
 })
 export default class LayoutComponent {
-  
+
 }
