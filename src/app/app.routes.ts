@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-
+//routing
 export const routes: Routes = [
     {
         path: '',
