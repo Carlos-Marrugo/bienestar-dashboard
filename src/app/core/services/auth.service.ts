@@ -24,7 +24,7 @@ export class AuthService {
     )
   }
 
-  //save in localStorage
+  //save token in localStorage
   private setToken(token: string): void {
     localStorage.setItem(this.tokenKey, token);
   }
