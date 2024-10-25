@@ -18,6 +18,7 @@ export class AuthService {
       tap(response => {
         if (response.token) {
           console.log(response.token);
+          this.setToken(response.token);
         }
       })
     )
@@ -45,7 +46,7 @@ export class AuthService {
 
   }
 
-  logout(): void{
+  logout(): void {
     localStorage.removeItem(this.tokenKey);
     this.router.navigate(['/login']);
   }
