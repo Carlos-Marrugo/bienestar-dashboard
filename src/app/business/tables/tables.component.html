@@ -1,134 +1,155 @@
-
-<div class="mb-4 grid grid-cols-1 gap-6 xl:grid-cols-2">
-    <div class="relative flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 shadow-md overflow-hidden xl:col-span-2">
-      <div class="relative bg-clip-border rounded-xl overflow-hidden bg-transparent text-gray-700 shadow-none m-0 flex items-center justify-between p-6">
-        <div>
-          <h6 class="block antialiased tracking-normal font-sans text-base font-semibold leading-relaxed text-blue-gray-900 mb-1">Projects</h6>
-          <p class="antialiased font-sans text-sm leading-normal flex items-center gap-1 font-normal text-blue-gray-600">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" aria-hidden="true" class="h-4 w-4 text-blue-500">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
-            </svg>
-            <strong>30 done</strong> this month
-          </p>
-        </div>
-        <button aria-expanded="false" aria-haspopup="menu" id=":r5:" class="relative middle none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30" type="button">
-          <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="currenColor" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" aria-hidden="true" class="h-6 w-6">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 12.75a.75.75 0 110-1.5.75.75 0 010 1.5zM12 18.75a.75.75 0 110-1.5.75.75 0 010 1.5z"></path>
-            </svg>
-          </span>
-        </button>
+<div class="overflow-x-auto">
+  <div class="min-w-screen min-h-screen bg-gray-100 flex items-center justify-center bg-gray-100 font-sans overflow-hidden">
+      <div class="w-full lg:w-5/6">
+          <div class="bg-white shadow-md rounded my-6">
+              <table class="min-w-max w-full table-auto">
+                  <thead>
+                      <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                          <th class="py-3 px-6 text-left">Identificacion</th>
+                          <th class="py-3 px-6 text-left">Nombres</th>
+                          <th class="py-3 px-6 text-center">Apellidos</th>
+                          <th class="py-3 px-6 text-center">Status</th>
+                          <th class="py-3 px-6 text-center">Actions</th>
+                      </tr>
+                  </thead>
+                  <tbody class="text-gray-600 text-sm font-light">
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                          <td class="py-3 px-6 text-left whitespace-nowrap">
+                                  <span class="font-medium">1137524433</span>
+                          </td>
+                          <td class="py-3 px-6 text-left">
+                              <div class="flex items-center">
+                                  <div class="mr-2">
+                                      <img class="w-6 h-6 rounded-full" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                                  </div>
+                                  <span>Carlos Marrugo</span>
+                              </div>
+                          </td>
+                          <td class="py-3 px-6 text-center">
+                              <div class="flex items-center justify-center">
+                                  <img class="w-6 h-6 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                                  <img class="w-6 h-6 rounded-full border-gray-200 border -m-1 transform hover:scale-125" src="https://randomuser.me/api/portraits/women/2.jpg"/>
+                                  <img class="w-6 h-6 rounded-full border-gray-200 border -m-1 transform hover:scale-125" src="https://randomuser.me/api/portraits/men/3.jpg"/>
+                              </div>
+                          </td>
+                          <td class="py-3 px-6 text-center">
+                              <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">Active</span>
+                          </td>
+                          <td class="py-3 px-6 text-center">
+                              <div class="flex item-center justify-center">
+                                  <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                      </svg>
+                                  </div>
+                                  <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                      </svg>
+                                  </div>
+                                  <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                      </svg>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr class="border-b border-gray-200 bg-gray-50 hover:bg-gray-100">
+                          <td class="py-3 px-6 text-left">
+                              <div class="flex items-center">
+                                  <span class="font-medium">1232654789</span>
+                              </div>
+                          </td>
+                          <td class="py-3 px-6 text-left">
+                              <div class="flex items-center">
+                                  <div class="mr-2">
+                                      <img class="w-6 h-6 rounded-full" src="https://randomuser.me/api/portraits/women/2.jpg"/>
+                                  </div>
+                                  <span>Anita Rodriquez</span>
+                              </div>
+                          </td>
+                          <td class="py-3 px-6 text-center">
+                              <div class="flex items-center justify-center">
+                                  <img class="w-6 h-6 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                                  <img class="w-6 h-6 rounded-full border-gray-200 border -m-1 transform hover:scale-125" src="https://randomuser.me/api/portraits/women/2.jpg"/>
+                                  <img class="w-6 h-6 rounded-full border-gray-200 border -m-1 transform hover:scale-125" src="https://randomuser.me/api/portraits/men/3.jpg"/>
+                              </div>
+                          </td>
+                          <td class="py-3 px-6 text-center">
+                              <span class="bg-red-200 text-red-600 py-1 px-3 rounded-full text-xs">Inactivo</span>
+                          </td>
+                          <td class="py-3 px-6 text-center">
+                              <div class="flex item-center justify-center">
+                                  <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                      </svg>
+                                  </div>
+                                  <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                      </svg>
+                                  </div>
+                                  <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                      </svg>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                      <tr class="border-b border-gray-200 hover:bg-gray-100">
+                          <td class="py-3 px-6 text-left">
+                              <div class="flex items-center">
+                                  <span class="font-medium">1001236547</span>
+                              </div>
+                          </td>
+                          <td class="py-3 px-6 text-left">
+                              <div class="flex items-center">
+                                  <div class="mr-2">
+                                      <img class="w-6 h-6 rounded-full" src="https://randomuser.me/api/portraits/men/3.jpg"/>
+                                  </div>
+                                  <span>Taylan Bush</span>
+                              </div>
+                          </td>
+                          <td class="py-3 px-6 text-center">
+                              <div class="flex items-center justify-center">
+                                  <img class="w-6 h-6 rounded-full border-gray-200 border transform hover:scale-125" src="https://randomuser.me/api/portraits/men/1.jpg"/>
+                                  <img class="w-6 h-6 rounded-full border-gray-200 border -m-1 transform hover:scale-125" src="https://randomuser.me/api/portraits/women/2.jpg"/>
+                                  <img class="w-6 h-6 rounded-full border-gray-200 border -m-1 transform hover:scale-125" src="https://randomuser.me/api/portraits/men/3.jpg"/>
+                              </div>
+                          </td>
+                          <td class="py-3 px-6 text-center">
+                              <span class="bg-green-200 text-green-600 py-1 px-3 rounded-full text-xs">Activo</span>
+                          </td>
+                          <td class="py-3 px-6 text-center">
+                              <div class="flex item-center justify-center">
+                                  <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                      </svg>
+                                  </div>
+                                  <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+                                      </svg>
+                                  </div>
+                                  <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                      </svg>
+                                  </div>
+                              </div>
+                          </td>
+                      </tr>
+                      
+                  </tbody>
+              </table>
+          </div>
       </div>
-      <div class="p-6 overflow-x-scroll px-0 pt-0 pb-2">
-        <table class="w-full min-w-[640px] table-auto">
-          <thead>
-            <tr>
-              <th class="border-b border-blue-gray-50 py-3 px-6 text-left">
-                <p class="block antialiased font-sans text-[11px] font-medium uppercase text-blue-gray-400">companies</p>
-              </th>
-              <th class="border-b border-blue-gray-50 py-3 px-6 text-left">
-                <p class="block antialiased font-sans text-[11px] font-medium uppercase text-blue-gray-400">budget</p>
-              </th>
-              <th class="border-b border-blue-gray-50 py-3 px-6 text-left">
-                <p class="block antialiased font-sans text-[11px] font-medium uppercase text-blue-gray-400">completion</p>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <div class="flex items-center gap-4">
-                  <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Material XD Version</p>
-                </div>
-              </td>
-              
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <p class="block antialiased font-sans text-xs font-medium text-blue-gray-600">$14,000</p>
-              </td>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <div class="w-10/12">
-                  <p class="antialiased font-sans mb-1 block text-xs font-medium text-blue-gray-600">60%</p>
-                  <div class="flex flex-start bg-blue-gray-50 overflow-hidden w-full rounded-sm font-sans text-xs font-medium h-1">
-                    <div class="flex justify-center items-center h-full bg-gradient-to-tr from-blue-600 to-blue-400 text-white" style="width: 60%;"></div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <div class="flex items-center gap-4">
-                  <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Add Progress Track</p>
-                </div>
-              </td>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <p class="block antialiased font-sans text-xs font-medium text-blue-gray-600">$3,000</p>
-              </td>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <div class="w-10/12">
-                  <p class="antialiased font-sans mb-1 block text-xs font-medium text-blue-gray-600">10%</p>
-                  <div class="flex flex-start bg-blue-gray-50 overflow-hidden w-full rounded-sm font-sans text-xs font-medium h-1">
-                    <div class="flex justify-center items-center h-full bg-gradient-to-tr from-blue-600 to-blue-400 text-white" style="width: 10%;"></div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <div class="flex items-center gap-4">
-                  <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Fix Platform Errors</p>
-                </div>
-              </td>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <p class="block antialiased font-sans text-xs font-medium text-blue-gray-600">Not set</p>
-              </td>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <div class="w-10/12">
-                  <p class="antialiased font-sans mb-1 block text-xs font-medium text-blue-gray-600">100%</p>
-                  <div class="flex flex-start bg-blue-gray-50 overflow-hidden w-full rounded-sm font-sans text-xs font-medium h-1">
-                    <div class="flex justify-center items-center h-full bg-gradient-to-tr from-green-600 to-green-400 text-white" style="width: 100%;"></div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <div class="flex items-center gap-4">
-                  <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Launch our Mobile App</p>
-                </div>
-              </td>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <p class="block antialiased font-sans text-xs font-medium text-blue-gray-600">$20,500</p>
-              </td>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <div class="w-10/12">
-                  <p class="antialiased font-sans mb-1 block text-xs font-medium text-blue-gray-600">100%</p>
-                  <div class="flex flex-start bg-blue-gray-50 overflow-hidden w-full rounded-sm font-sans text-xs font-medium h-1">
-                    <div class="flex justify-center items-center h-full bg-gradient-to-tr from-green-600 to-green-400 text-white" style="width: 100%;"></div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <div class="flex items-center gap-4">
-                  <p class="block antialiased font-sans text-sm leading-normal text-blue-gray-900 font-bold">Add the New Pricing Page</p>
-                </div>
-              </td>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <p class="block antialiased font-sans text-xs font-medium text-blue-gray-600">$500</p>
-              </td>
-              <td class="py-3 px-5 border-b border-blue-gray-50">
-                <div class="w-10/12">
-                  <p class="antialiased font-sans mb-1 block text-xs font-medium text-blue-gray-600">25%</p>
-                  <div class="flex flex-start bg-blue-gray-50 overflow-hidden w-full rounded-sm font-sans text-xs font-medium h-1">
-                    <div class="flex justify-center items-center h-full bg-gradient-to-tr from-blue-600 to-blue-400 text-white" style="width: 25%;"></div>
-                  </div>
-                </div>
-              </td>
-            </tr>
-            
-          </tbody>
-        </table>
-      </div>
-    </div>
   </div>
+</div>
