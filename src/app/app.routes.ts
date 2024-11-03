@@ -27,6 +27,13 @@ export const routes: Routes = [
           ),
       },
       {
+        path: 'estadisticas',
+        loadComponent: () =>
+          import('./business/estadisticas/estadisticas.component').then(
+            (m) => m.EstadisticasComponent
+          ),
+      },
+      {
         path: '',
         redirectTo: 'dashboard',
         pathMatch: 'full'
