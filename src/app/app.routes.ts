@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+
 //routing
 export const routes: Routes = [
   {
@@ -39,6 +40,13 @@ export const routes: Routes = [
         pathMatch: 'full'
       },
     ],
+  },
+  {
+    path: 'add-activity',  // Ruta independiente
+    loadComponent: () =>
+      import('./business/tables/add-activity/add-activity.component').then(
+        (m) => m.AddActivityComponent
+      ),
   },
   {
     path: 'login',
