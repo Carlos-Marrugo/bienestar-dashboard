@@ -34,6 +34,14 @@ export const routes: Routes = [
             (m) => m.EstadisticasComponent
           ),
       },
+      
+  {
+    path: 'instructores',  // Ruta independiente
+    loadComponent: () =>
+      import('./business/instructores/instructores.component').then(
+        (m) => m.InstructoresComponent
+      ),
+  },
       {
         path: '',
         redirectTo: 'dashboard',

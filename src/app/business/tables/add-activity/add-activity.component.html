@@ -1,12 +1,55 @@
-<div class="bg-white shadow rounded-lg p-4">
-    <h2 class="text-xl font-bold">Agregar Actividad</h2>
-    <form>
-      <label for="activityName" class="block mt-4">Nombre de la Actividad:</label>
-      <input type="text" id="activityName" class="border rounded p-2 w-full" required>
-      
-      <button type="submit" class="mt-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600">
-        Crear Actividad
-      </button>
-    </form>
-  </div>
-  
+<div class="h-screen w-screen bg-gray-300 flex flex-col justify-center">
+    <div class="container mx-auto flex justify-center items-center p-2">
+        <div class="w-full max-w-4xl border border-gray-300 p-6 grid grid-cols-1 gap-6 bg-white shadow-lg rounded-lg">
+            <h1 class="text-3xl font-bold text-center mb-4">Registro de Actividades</h1>
+            <h2 class="text-2xl font-semibold text-center mb-6">Agregar Nueva Actividad</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Nombre de la Actividad</label>
+                    <input type="text" placeholder="Ingrese el nombre de la actividad..."
+                        class="mt-1 block w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring focus:ring-green-500"/>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Lugar de la Actividad</label>
+                    <select class="mt-1 block w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring focus:ring-green-500">
+                        <option>Seleccione un lugar...</option>
+                        <option>Auditorio Principal</option>
+                        <option>Salón de Clases 101</option>
+                        <option>Gimnasio</option>
+                        <option>Parque Central</option>
+                    </select>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Horario de Inicio</label>
+                    <input type="time"
+                        class="mt-1 block w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring focus:ring-green-500"/>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">Horario de Finalización</label>
+                    <input type="time"
+                        class="mt-1 block w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring focus:ring-green-500"/>
+                </div>
+            </div>
+            <div>
+                <label class="block text-sm font-medium text-gray-700">Instructor Asignado</label>
+                <select class="mt-1 block w-full border border-gray-300 p-2 rounded focus:outline-none focus:ring focus:ring-green-500">
+                    <option>Seleccione un instructor...</option>
+                    <option>Instructor A</option>
+                    <option>Instructor B</option>
+                    <option>Instructor C</option>
+                    <option>Instructor D</option>
+                </select>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <button class="p-2 border w-1/4 rounded-md bg-green-600 text-white hover:bg-green-700 transition duration-300">
+                    Agregar Actividad
+                </button>
+                <button  class="p-2 border w-1/4 rounded-md bg-gray-600 text-white hover:bg-gray-700 transition duration-300">
+                    Volver a Tablas
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
