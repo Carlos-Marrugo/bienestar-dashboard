@@ -1,3 +1,67 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+//routing
+export const routes: Routes = [
+  {
+    path: '',
+    loadComponent: () => import('./shared/components/layout/layout.component'),
+    children: [
+      {
+        path: 'dashboard',
+        loadComponent: () =>
+          import('./business/dashboard/dashboard.component').then(
+            (m) => m.DashboardComponent
+          ),
+      },
+      {
+        path: 'profile',
+        loadComponent: () =>
+          import('./business/profile/profile.component').then(
+            (m) => m.ProfileComponent
+          ),
+      },
+      {
+        path: 'tables',
+        loadComponent: () =>
+          import('./business/tables/tables.component').then(
+            (m) => m.TablesComponent
+          ),
+      },
+      {
+        path: 'estadisticas',
+        loadComponent: () =>
+          import('./business/estadisticas/estadisticas.component').then(
+            (m) => m.EstadisticasComponent
+          ),
+      },
+      
+  {
+    path: 'instructores',  // Ruta independiente
+    loadComponent: () =>
+      import('./business/instructores/instructores.component').then(
+        (m) => m.InstructoresComponent
+      ),
+  },
+      {
+        path: '',
+        redirectTo: 'dashboard',
+        pathMatch: 'full'
+      },
+    ],
+  },
+  {
+    path: 'add-activity',  // Ruta independiente
+    loadComponent: () =>
+      import('./business/tables/add-activity/add-activity.component').then(
+        (m) => m.AddActivityComponent
+      ),
+  },
+  {
+    path: 'login',
+    loadComponent: () => import('./business/authentication/login/login.component')
+  },
+  {
+    path: '**',
+    redirectTo: 'dashboard'
+  }
+];
